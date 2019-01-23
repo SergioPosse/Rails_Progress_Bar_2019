@@ -1,0 +1,10 @@
+<h1>Buscador#index</h1>
+  <%= form_tag buscador_path, :method => 'post' do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      </p>
+  <% end %>
+    <a href="<%= @mostrar %>"><%= @mostrar %></a>
+
+
